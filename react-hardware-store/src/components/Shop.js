@@ -46,6 +46,7 @@ class Shop extends Component {
         <button onClick={this.toggleIsAdmin}>Toggle Admin</button>
         <div className="shop">
           <div className="products">
+            <div className="cartview">
             {this.state.isAdmin
               ? <AdminView
                 productList={this.state.productList}
@@ -58,6 +59,7 @@ class Shop extends Component {
           <CartView />
         </div>
       </div>
+    </div>
     )
   }
 }
